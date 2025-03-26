@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #f7f7f7;
+    margin-bottom: 8px;
+}
+
+.container {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
