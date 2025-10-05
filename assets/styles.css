@@ -47,6 +47,8 @@ a:hover{color:var(--brand-dark)}
   background:url('../images/hero-bodensee.jpg') center/cover no-repeat;
   color:#fff; position:relative;
 }
+
+
 /* === Fix: Lesbare Highlights im Hero-Bereich === */
 .hero .card {
   background: rgba(255, 255, 255, 0.15); /* halbtransparent */
@@ -54,6 +56,8 @@ a:hover{color:var(--brand-dark)}
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
+.hero .card { font-weight: 600; }
+
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.55));}
 .hero-inner{position:relative;z-index:1;padding:6rem 0 5rem}
 .hero h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 .5rem}
