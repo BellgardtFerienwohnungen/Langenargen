@@ -105,3 +105,34 @@ footer a{color:#bae6fd}
 @media (max-width: 540px){
   .gallery img{height:180px}
 }
+
+/* === Lightbox === */
+#lightbox{
+  position: fixed; inset: 0; display: none;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,.85); z-index: 1000; padding: 2rem;
+}
+#lightbox.open{ display: flex; }
+#lightbox .lb-img{
+  max-width: 90vw; max-height: 85vh; border-radius: .75rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
+#lightbox .lb-close,
+#lightbox .lb-prev,
+#lightbox .lb-next{
+  position: absolute; background: rgba(255,255,255,.15);
+  border: none; color: #fff; font-size: 2rem;
+  width: 48px; height: 48px; border-radius: 999px;
+  display: grid; place-items: center; cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+#lightbox .lb-close{ top: 1rem; right: 1rem; }
+#lightbox .lb-prev{ left: 1rem; top: 50%; transform: translateY(-50%); }
+#lightbox .lb-next{ right: 1rem; top: 50%; transform: translateY(-50%); }
+#lightbox .lb-close:hover,
+#lightbox .lb-prev:hover,
+#lightbox .lb-next:hover{ background: rgba(255,255,255,.25); }
+
+/* Mauszeiger über klickbaren Galeriebildern */
+.gallery img{ cursor: zoom-in; }
+
